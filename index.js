@@ -18,7 +18,9 @@ function checkanswer(currentlevel){
             $("body").removeClass("game-over");
         },200)
         $("h1").text("Game-Over,press any key to restart")
-        startover();
+        setTimeout(function () {  
+            startover(); 
+        }, 1000); 
     }
 
 }
