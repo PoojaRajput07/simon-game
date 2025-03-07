@@ -26,7 +26,7 @@ function startover(){
     level=0;
     started=false;
     gamepattern=[];
-     $("h1").text("press a key to start");
+     
 
 }
 function nextsequence(){
