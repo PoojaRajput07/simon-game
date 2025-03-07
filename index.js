@@ -72,7 +72,7 @@ $(".btn").click(function(){
 
 
  $("h1").text("press a key to start");
- $(document).on("keypress",function(){
+ $(document).on("click keypress",function(){
     if(!started){
         started=true;
         level=0;
