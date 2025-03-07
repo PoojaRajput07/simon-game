@@ -2,6 +2,7 @@ var buttoncolors=["green","red","yellow","blue"];
 var gamepattern=[];
 var userclickedpattern=[];
 var level=0;
+ let started=false;
 function checkanswer(currentlevel){
     if(gamepattern[currentlevel]===userclickedpattern[currentlevel]){
         if(gamepattern.length===userclickedpattern.length){
@@ -25,6 +26,7 @@ function startover(){
     level=0;
     started=false;
     gamepattern=[];
+     $("h1").text("press a key to start");
 
 }
 function nextsequence(){
@@ -68,7 +70,7 @@ $(".btn").click(function(){
 
  })
 
- var started=false;
+
  $("h1").text("press a key to start");
  $(document).on("keypress",function(){
     if(!started){
